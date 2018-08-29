@@ -1,29 +1,655 @@
 <!DOCTYPE html>
-<html>
-      <head>
-            <title> {{page.title}} </title>
-            <link rel="stylesheet" type="text/css" href="/css/main.css">
-      </head>
-      <body>
-            <nav>
-            <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/about">Acerca de nosotros</a></li>
-                 <li><a href="/tareas">Avance Semanal</a></li>
-                <li><a href="/project">Proyecto</a></li>
-                
-             </ul>
-             </nav>
-             <div class="container">
-             
-             {{ content }}
-             
+<body style="">
+<header class="header header-home" style="background-color: transparent; transition: background-color 0.3s ease 0s;">
+  <nav class="navbar navbar-home navbar-default" style="box-shadow: none;">
+    <div class="container-fluid">
+      <div class="col-sm-10 col-sm-push-1">
+      <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="/?PHPSESSID=2ivh5v5gr3ft4mjps161onck34"><img src="images/cross-logo.png" alt="" id="cross-img"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right social-content">
+		              <li class="social"><a href="https://www.facebook.com/medicalinnovationandtechnologyperu/?ref=ts&amp;fref=ts" target="_blank" class="home-nav" style="color: rgb(255, 255, 255);"><span class="icon-facebook"></span></a></li>
+            <li class="social"><a href="https://www.linkedin.com/company/medical-innovation-&amp;-technology?trk=biz-companies-cym" target="_blank" class="home-nav" style="color: rgb(255, 255, 255);"><span class="icon-linkedin"></span></a></li>
+            <li class="social"><a href="https://www.youtube.com/channel/UCnxh-ayzpj1UYGd8yPtYe4A" target="_blank" class="home-nav" style="color: rgb(255, 255, 255);"><span class="icon-youtube"></span></a></li>          </ul>
+          <ul class="nav navbar-nav navbar-right">
+		  <li class="active-menu"><a href="/?PHPSESSID=2ivh5v5gr3ft4mjps161onck34">Inicio</a></li>
+<li><a href="nosotros.php?PHPSESSID=2ivh5v5gr3ft4mjps161onck34" class="home-nav" style="color: rgb(255, 255, 255);">Nosotros</a></li>
+<li><a href="servicios.php?PHPSESSID=2ivh5v5gr3ft4mjps161onck34" class="home-nav" style="color: rgb(255, 255, 255);">Servicios</a></li>
+<li><a href="http://blog.medical-int.com" class="home-nav" target="_blank" style="color: rgb(255, 255, 255);">Blog</a></li>
+<li><a href="#contact" class="home-nav" style="color: rgb(255, 255, 255);">Contáctanos</a></li>
+
+
+
+		
+
+		          </ul>
+        </div><!-- /.navbar-collapse --></div>
+    </div><!-- /.container-fluid -->
+  </nav>
+</header>
+
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner main-carousel-inner" role="listbox">
+		<div class="item main-item slider4">
+        <div class="carousel-caption custom-caption-4">
+          Llevamos la salud <br>donde más se <b>NECESITA</b>        </div>
+      </div>
+	  <div class="item main-item slider5">
+        <div class="carousel-caption custom-caption-5">
+          Atendemos las necesidades<br> de salud en <b>ZONAS RURALES</b>        </div>
+      </div>
+      <div class="item main-item slider1">
+        <div class="carousel-caption custom-caption-1">
+          Mejoramos la gestión<br>de la <b>SALUD</b>        </div>
+      </div>
+      <div class="item main-item slider2 active">
+        <div class="carousel-caption custom-caption-2">
+          Nos adecuamos a<br>tus <b>NECESIDADES</b>        </div>
+      </div>
+      <div class="item main-item slider3">
+        <div class="carousel-caption custom-caption-3">
+          Somos tus aliados<br>en <b>TECNOLOGÍA</b>        </div>
+      </div>
+      ...
+    </div>
+
+    <!-- Controls -->
+    <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+  </div>
+
+<main>
+	<!-- About us -->
+  <div class="container">
+    <div class="row">
+      <div class="invSep80"></div>
+      <div class="col-sm-12">
+        <h2 class="text-center">QUIENES SOMOS</h2>
+        <div class="invSep15"></div>
+        <div class="title-underline"></div>
+        <div class="invSep80"></div>
+        <div class="row text-center">
+          <div class="pad-x-15">Medical Innovation &amp; Technology es una empresa peruana dedicada a desarrollar soluciones tecnológicas de e-health. Nuestro propósito es mejorar el acceso de los pacientes a los servicios médicos y modernizar la gestión de los centros de salud mediante el desarrollo de tecnología en telemedicina.</div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="invSep80"></div>
+      <div class="clearfix"></div>
+      <div class="col-sm-4 pad-bot-30">
+        <h4>Misión</h4>
+        <div class="invSep20"></div>
+        <p>Impulsar un servicio médico accesible, preciso, humano y optimizado, a través de las soluciones tecnológicas que creamos.</p>
+      </div>
+      <div class="col-sm-4 pad-bot-30">
+        <h4>Visión</h4>
+        <div class="invSep20"></div>
+        <p>Ser el referente en innovación de tecnología médica y reconocida como la empresa capaz de transformar el sector salud en el Perú.</p>
+      </div>
+      <div class="col-sm-4 pad-bot-0">
+        <h4>Equipo</h4>
+        <div class="invSep20"></div>
+        <p>Contamos con un equipo multidisciplinario altamente capacitado, capaz de crear soluciones tecnológicas a medida según sus necesidades.</p>
+      </div>
+      <div class="col-sm-12 text-center">
+        <div class="invSep40"></div>
+        <a class="btn custom-btn-4" href="nosotros.php?PHPSESSID=2ivh5v5gr3ft4mjps161onck34" role="button">Conoce más</a>
+      </div>
+    </div>
+    <div class="invSep80"></div>
+  </div>
+  <div class="invSep40"></div>
+  <div class="banner2">
+    <div class="container">
+      <div class="bannerCaption">
+        <blockquote>"Son tres las cosas que le diría a un equipo para ayudarlo a mantenerse unido: Cuando algo resulta mal: yo lo hice. Cuando algo resulta mas o menos bien: nosotros lo hicimos. Cuando algo resulta realmente bien: ustedes lo hicieron. "        <small class="pull-right">Autor: Paul “Bear” Bryant.</small>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="services">
+    <div class="">
+      <div class="invSep80"></div>
+      <h2 class="text-center">Servicios</h2>
+      <div class="invSep15"></div>
+      <div class="title-underline"></div>
+      <div class="invSep80"></div>
+      <div class="">
+        <div class="grid">
+          <!--<figure class="effect-mit">
+            <img src="images/product-1.jpg" alt=""/>
+            <figcaption>
+              <h2><span>TELE-DIAGNÓSTICO</span></h2>
+              <p>Sistema de desarrollo en base a tecnologías de la información y de las telecomunicaciones que facilita la asistencia medica a distancia.</p>
+              <a href="tele-diagnostico.php?PHPSESSID=2ivh5v5gr3ft4mjps161onck34"> </a>
+            </figcaption>     
+          </figure>
+-->
+          <figure class="effect-mit">
+            <img src="images/product-2.jpg" alt="">
+            <figcaption>
+              <h2><span>TELE-ECOGRAFÍA</span></h2>
+              <p>Servicio integral que permite realizar diagnóstico por ecografía a distancia. Ideal para zonas rurales, con un nuevo modelo de adquisición certificado que revoluciona la ecografía convencional.</p>
+              <a href="tele-ecografia.php?PHPSESSID=2ivh5v5gr3ft4mjps161onck34"> </a>
+            </figcaption>     
+          </figure>
+
+          <!--<figure class="effect-mit">
+            <img src="images/product-3.jpg" alt=""/>
+            <figcaption>
+              <h2>CAPACITACIÓN <span>WEB</span></h2>
+              <p>Plataforma de enseñanza en línea a nivel médico que permite generar conocimiento y potencializar habilidades. Este servicio es  personalizable y adaptable, según sus necesidades.</p>
+              <a href="capacitacion-web.php?PHPSESSID=2ivh5v5gr3ft4mjps161onck34"> </a>
+            </figcaption>     
+          </figure>
+          -->
+
+          <figure class="effect-mit">
+            <img src="images/product-4.jpg" alt="">
+            <figcaption>
+              <h2>MEDICAL <span>CLOUD</span></h2>
+              <p>Plataforma virtual y aplicativo móvil mediante el cual su centro médico puede interactuar con sus pacientes. </p>
+              <a href="medical-cloud.php?PHPSESSID=2ivh5v5gr3ft4mjps161onck34"> </a>
+            </figcaption>     
+          </figure>
+
+          <figure class="effect-mit">
+            <img src="images/product-5.jpg" alt="">
+            <figcaption>
+              <h2>MEDICAL <span>PACS</span></h2>
+              <p>Sistema de almacenamiento, administración y visualización de imágenes médicas para la optimización del flujo de trabajo.</p>
+              <a href="medical-pacs?PHPSESSID=2ivh5v5gr3ft4mjps161onck34"> </a>
+            </figcaption>     
+          </figure>
+
+          <!--<figure class="effect-mit">
+            <img src="images/product-6.jpg" alt=""/>
+            <figcaption>
+              <h2>MEDICAL <span>IMAGE</span></h2>
+              <p>Software especialmente diseñado para la adquisición de imágenes y videos obtenidos de equipos médicos, que permite la generación de informes personalizados.</p>
+              <a href="medical-image?PHPSESSID=2ivh5v5gr3ft4mjps161onck34"> </a>
+            </figcaption>     
+          </figure>
+          -->
+        </div>
+      </div>
+    </div>    
+  </div>
+  <div class="custom-area1">
+    <div class="invSep80"></div>
+    <h2 class="text-center font-negative">Empresas que confian en nosotros</h2>
+    <div class="invSep15"></div>
+    <div class="title-underline"></div>
+    <div class="invSep80"></div>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="">
+          <!--<div class="carousel carousel-showmanymoveone slide" id="carousel123">
+            <div class="carousel-inner">-->
+              <div class="item active item-filter">
+                <div class="col-xs-12 col-sm-6 col-md-4"><a href="http://www.minsa.gob.pe/" target="_blank"><img src="images/minsa.jpg" class="img-responsive center-block"></a></div>
               </div>
-              <footer>
-              <ul>
-                    <li><a href="mailto: sebastian.melendez@upch.pe gloria.moron@upch.pe yhanira.medina@upch alberto.yauri@upch.pe ">Correo Electrónico</a></li>
-                    <li><a href="https://github.com/proyectpgp3/">Nuestro repositorio en GitHub</a></li>
+              <div class="item">
+                <div class="col-xs-12 col-sm-6 col-md-4"><a href="http://resocentro.com/" target="_blank"><img src="images/rc.png" class="img-responsive center-block"></a></div>
+              </div>          
+              <div class="item">
+                <div class="col-xs-12 col-sm-6 col-md-4"><a href="http://cmp.org.pe/" target="_blank"><img src="images/cmp.jpg" class="img-responsive center-block"></a></div>
+              </div>
+             
+            <!--</div>
+           <a class="left carousel-control" href="#carousel123" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            <a class="right carousel-control" href="#carousel123" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+          </div>-->
+        </div>
+
+      </div>
+    </div>
+
+    <div class="invSep80"></div>
+  </div>
+  <div class="invSep80"></div>
+  <!--<div class="container-fluid text-center">
+    <h2 class="text-center">Datos curiosos</h2>
+    <div class="invSep15"></div>
+    <div class="title-underline"></div>
+    <div class="invSep80"></div>
+    <div class="col-sm-3 pad-bot-30">
+      <div>
+        <div class="number1"><span>1652</span></div>
+        <div class="number-caption">Lluvia de ideas</div>
+      </div>
+    </div>
+    <div class="col-sm-3 pad-bot-30">
+      <div>
+        <div class="number1">170150</div>
+        <div class="number-caption">Líneas de código</div>
+      </div>
+    </div>
+    <div class="col-sm-3 pad-bot-30">
+      <div>
+        <div class="number1">10254</div>
+        <div class="number-caption">Tazas de café</div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div>
+        <div class="number1">1034</div>
+        <div class="number-caption">Seguidores</div>
+      </div>
+    </div>
+  </div>
+  -->
+<div class="container">
+    <div class="invSep80"></div>
+    <h2 class="text-center">Últimas publicaciones</h2>
+    <div class="invSep15"></div>
+    <div class="title-underline"></div>
+    <div class="invSep50"></div>
+	
+	<div class="row">
+	<div class="col-sm-4">
+        <div class="invSep30"></div>
+        <div class="underline1">
+		
+					<img src="http://blog.medical-int.com/wp-content/uploads/2018/08/DSC0072.jpg" alt="" class="img-responsive block-center">
+		          
+            <div class="invSep20"></div>
+            <h4>La salud en zonas rurales: Cómo las Tecnologías de Información y Comunicación son usadas para cerrar brechas</h4>
+            <div class="invSep10"></div>
+            <span class="glyphicon glyphicon-edit"> agosto 27, 2018</span>
+            <div class="invSep10"></div>
+            <p>
+			En algún momento de nuestras vidas hemos experimentado algún tipo de dolencia, que, de un momento a otro, nos ha obligado a levantarnos de la cama e ir lo más […]            </p>
+            <div class="invSep30"></div>
+            <a href="http://blog.medical-int.com/2018/08/27/la-salud-en-zonas-rurales-como-las-tecnologias-de-informacion-y-comunicacion-son-usadas-para-cerrar-brechas/" target="_blank"><span class="pull-right">Ver más</span></a>
+            <div class="clearfix"></div>
+          
+        </div>
+      </div>
+
+
+
+	<div class="col-sm-4">
+        <div class="invSep30"></div>
+        <div class="underline1">
+		
+					<img src="http://blog.medical-int.com/wp-content/uploads/2018/08/DSC9997.jpg" alt="" class="img-responsive block-center">
+		          
+            <div class="invSep20"></div>
+            <h4>E-Health: Cómo la tecnología transforma la medicina</h4>
+            <div class="invSep10"></div>
+            <span class="glyphicon glyphicon-edit"> agosto 14, 2018</span>
+            <div class="invSep10"></div>
+            <p>
+			La tecnología ha cambiado nuestra vida de formas nunca antes pensadas. No existe ámbito donde no haya intervenido, y si se trata de la medicina, el impacto es incluso más […]            </p>
+            <div class="invSep30"></div>
+            <a href="http://blog.medical-int.com/2018/08/14/e-health-como-la-tecnologia-transforma-la-medicina/" target="_blank"><span class="pull-right">Ver más</span></a>
+            <div class="clearfix"></div>
+          
+        </div>
+      </div>
+
+
+
+	<div class="col-sm-4">
+        <div class="invSep30"></div>
+        <div class="underline1">
+		
+					<img src="http://blog.medical-int.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-09-at-5.48.26-PM.png" alt="" class="img-responsive block-center">
+		          
+            <div class="invSep20"></div>
+            <h4>Medical Innovation &amp; Technology se convierte en socio de negocio con Microsoft</h4>
+            <div class="invSep10"></div>
+            <span class="glyphicon glyphicon-edit"> abril 10, 2018</span>
+            <div class="invSep10"></div>
+            <p>
+			Con orgullo y alegría anunciamos que&nbsp;hemos firmado una alianza estratégica con Microsoft, convirtiéndonos así en Silver Partner de esta empresa, lo cual nos permitirá seguir trabajando en el desarrollo de […]            </p>
+            <div class="invSep30"></div>
+            <a href="http://blog.medical-int.com/2018/04/09/medical-innovation-technology-se-convierte-en-socio-de-negocio-con-microsoft/" target="_blank"><span class="pull-right">Ver más</span></a>
+            <div class="clearfix"></div>
+          
+        </div>
+      </div>
+
+
+</div><div class="row">
+	<div class="col-sm-4">
+        <div class="invSep30"></div>
+        <div class="underline1">
+		
+					<img src="http://blog.medical-int.com/wp-content/uploads/2018/04/15Febrero2018-Expreso-Especial.jpg" alt="" class="img-responsive block-center">
+		          
+            <div class="invSep20"></div>
+            <h4>Ecografías cuestan 7 veces más en zonas rurales</h4>
+            <div class="invSep10"></div>
+            <span class="glyphicon glyphicon-edit"> abril 10, 2018</span>
+            <div class="invSep10"></div>
+            <p>
+			Acceder a ecografías en zonas rurales resulta dificultoso y muy costoso para las gestantes, por ese motivo proponemos la Tele-ecografía, la cual permite que muchas mujeres puedan realizarse controles oportunos […]            </p>
+            <div class="invSep30"></div>
+            <a href="http://blog.medical-int.com/2018/04/09/ecografias-cuestan-7-veces-mas-en-zonas-rurales/" target="_blank"><span class="pull-right">Ver más</span></a>
+            <div class="clearfix"></div>
+          
+        </div>
+      </div>
+
+
+
+	<div class="col-sm-4">
+        <div class="invSep30"></div>
+        <div class="underline1">
+		
+					<img src="http://blog.medical-int.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-09-at-5.06.12-PM.png" alt="" class="img-responsive block-center">
+		          
+            <div class="invSep20"></div>
+            <h4>Equipo de Medical Innovation &amp; Technology obtuvo premio “Creatividad Empresarial 2017”</h4>
+            <div class="invSep10"></div>
+            <span class="glyphicon glyphicon-edit"> abril 10, 2018</span>
+            <div class="invSep10"></div>
+            <p>
+			Agradecemos a&nbsp;Diario El Comercio (Perú), por el reconocimiento al logro alcanzado en la premiación&nbsp;Creatividad Empresarial. Gracias al proyecto de “Tele-ecografía en zonas rurales somos acreedores&nbsp;de dos premios en las categorías: […]            </p>
+            <div class="invSep30"></div>
+            <a href="http://blog.medical-int.com/2018/04/09/equipo-de-medical-innovation-technology-obtuvo-premio-creatividad-empresarial-2017-2/" target="_blank"><span class="pull-right">Ver más</span></a>
+            <div class="clearfix"></div>
+          
+        </div>
+      </div>
+
+
+
+	<div class="col-sm-4">
+        <div class="invSep30"></div>
+        <div class="underline1">
+		
+					<img src="http://blog.medical-int.com/wp-content/uploads/2017/02/15977052_1500198230012153_8531976915951437193_n.jpg" alt="" class="img-responsive block-center">
+		          
+            <div class="invSep20"></div>
+            <h4>Medical Box: moderno sistema de telecografía de Medical Innovation &amp; Technology</h4>
+            <div class="invSep10"></div>
+            <span class="glyphicon glyphicon-edit"> febrero 10, 2017</span>
+            <div class="invSep10"></div>
+            <p>
+			Presentación del Medical Box , sistema de Telecografía que beneficia a mujeres gestantes de zonas rurales. Tv Perú, &nbsp;programa Tecnología Hoy. Desarrollado por Medical Innovation &amp; Technology.            </p>
+            <div class="invSep30"></div>
+            <a href="http://blog.medical-int.com/2017/02/10/medical-box-moderno-sistema-de-telecografia-de-medical-innovation-technology/" target="_blank"><span class="pull-right">Ver más</span></a>
+            <div class="clearfix"></div>
+          
+        </div>
+      </div>
+
+
+</div><div class="row">
+	<div class="col-sm-4">
+        <div class="invSep30"></div>
+        <div class="underline1">
+		
+					<img src="http://blog.medical-int.com/wp-content/uploads/2017/02/583658_320148.jpg" alt="" class="img-responsive block-center">
+		          
+            <div class="invSep20"></div>
+            <h4>La tecnología revoluciona el mundo de la salud</h4>
+            <div class="invSep10"></div>
+            <span class="glyphicon glyphicon-edit"> febrero 10, 2017</span>
+            <div class="invSep10"></div>
+            <p>
+			La fusión entre la tecnología y la medicina ha dado lugar al concepto de telemedicina. Uno de los primeros emprendimientos sobre el tema es Medical Innovation and Technology. Conoce más […]            </p>
+            <div class="invSep30"></div>
+            <a href="http://blog.medical-int.com/2017/02/10/la-tecnologia-revoluciona-el-mundo-de-la-salud/" target="_blank"><span class="pull-right">Ver más</span></a>
+            <div class="clearfix"></div>
+          
+        </div>
+      </div>
+
+
+
+	<div class="col-sm-4">
+        <div class="invSep30"></div>
+        <div class="underline1">
+		
+					<img src="http://blog.medical-int.com/wp-content/uploads/2016/11/blog-img1.jpg" alt="" class="img-responsive block-center">
+		          
+            <div class="invSep20"></div>
+            <h4>Campaña de Tele-Ecografí­a en la provincia de Churcampa</h4>
+            <div class="invSep10"></div>
+            <span class="glyphicon glyphicon-edit"> noviembre 10, 2016</span>
+            <div class="invSep10"></div>
+            <p>
+			            </p>
+            <div class="invSep30"></div>
+            <a href="http://blog.medical-int.com/2016/11/10/campana-de-tele-ecografia-en-la-provincia-de-churcampa/" target="_blank"><span class="pull-right">Ver más</span></a>
+            <div class="clearfix"></div>
+          
+        </div>
+      </div>
+
+
+
+	<div class="col-sm-4">
+        <div class="invSep30"></div>
+        <div class="underline1">
+		
+					<img src="http://blog.medical-int.com/wp-content/uploads/2016/11/blog-img2.jpg" alt="" class="img-responsive block-center">
+		          
+            <div class="invSep20"></div>
+            <h4>Campaña de Tele- Ecografía en el distrito de Nauta – Iquitos</h4>
+            <div class="invSep10"></div>
+            <span class="glyphicon glyphicon-edit"> noviembre 10, 2016</span>
+            <div class="invSep10"></div>
+            <p>
+			            </p>
+            <div class="invSep30"></div>
+            <a href="http://blog.medical-int.com/2016/11/10/campana-de-tele-ecografia-en-el-distrito-de-nauta-iquitos/" target="_blank"><span class="pull-right">Ver más</span></a>
+            <div class="clearfix"></div>
+          
+        </div>
+      </div>
+
+
+</div><div class="row">
+	<div class="col-sm-4">
+        <div class="invSep30"></div>
+        <div class="underline1">
+		
+					<img src="http://blog.medical-int.com/wp-content/uploads/2016/11/blog-img.jpg" alt="" class="img-responsive block-center">
+		          
+            <div class="invSep20"></div>
+            <h4>Tele- Ecografía para zonas rurales</h4>
+            <div class="invSep10"></div>
+            <span class="glyphicon glyphicon-edit"> noviembre 08, 2016</span>
+            <div class="invSep10"></div>
+            <p>
+			El proyecto a Posibilitando el diagnostico por imágenes en zonas rurales . Nace con el desarrollo del primer ecógrafo peruano, creado por el laboratorio de imágenes médicas de PUCP y […]            </p>
+            <div class="invSep30"></div>
+            <a href="http://blog.medical-int.com/2016/11/08/tele-ecografia-para-zonas-rurales/" target="_blank"><span class="pull-right">Ver más</span></a>
+            <div class="clearfix"></div>
+          
+        </div>
+      </div>
+
+
+</div>	
+   <div class="clearfix"></div>
+    <div class="invSep80"></div>
+    
+  </div>
+  <div class="banner13">
+	<div class="row">
+			</div>
+  </div>
+ <div class="clearfix"></div>
+  <div id="myCarousel1" class="carousel slide" data-ride="carousel1">
+ <div class="clearfix"></div>
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators custom-carousel-indicators1">
+      <li data-target="#myCarousel1" data-slide-to="0" class=""></li>
+      <li data-target="#myCarousel1" data-slide-to="1" class="active"></li>
+      <li data-target="#myCarousel1" data-slide-to="2" class=""></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item custom-item1">
+        <div class="carousel-caption custom-carousel-caption1">
+          <h3>Innovación y creatividad</h3>
+          <div class="invSep30"></div>
+          <p>La innovación y creatividad son las claves en el desarrollo de nuestras soluciones tecnológicas de e-health.</p>
+        </div>
+      </div>
+      <div class="item custom-item1 active">
+        <div class="carousel-caption custom-carousel-caption1">
+          <h3>Optimización de su establecimiento</h3>
+          <div class="invSep30"></div>
+          <p>Posibilitamos la optimización tecnológica de su establecimiento de salud y una mejor experiencia para los usuarios, logrando así la fidelización de sus clientes y la productividad de sus colaboradores.</p>
+        </div>
+      </div>
+
+      <div class="item custom-item1">
+        <div class="carousel-caption custom-carousel-caption1">
+          <h3>Siempre a su lado</h3>
+          <div class="invSep30"></div>
+          <p>Orientamos nuestro trabajo a satisfacer las necesidades del cliente con nuestros productos de alta calidad y a acompañarlos en su potencial crecimiento, convirtiéndonos en sus socios en tecnología.</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Left and right controls -->
+    <!-- a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a -->
+  </div>
+  <div class="clearfix"> </div>
+  </main>
+
+<div class="custom-bg">
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="invSep80"></div>
+        <div class="col-sm-6">
+            <h4 class="text-center font-negative">¿tienes una idea?</h4>
+            <h2 class="text-center font-negative">escríbenos</h2>
+            <div class="invSep15"></div>
+            <div class="title-underline"></div>
+          <div class="custom-form-1">
+            <form class="" onsubmit="sendMail(); return false;"><input type="hidden" name="PHPSESSID" value="2ivh5v5gr3ft4mjps161onck34">
+              <div class="form-group col-sm-6">
+                <input type="text" class="form-control custom-form-contro-1" id="nme" placeholder="Nombre">
+              </div>
+              <div class="form-group col-sm-6">
+                <input type="email" class="form-control custom-form-contro-1" id="mle" placeholder="Correo">
+              </div>
+              <div class="form-group col-sm-12 ">
+                <select id="como" class="form-control custom-form-contro-1">
+                  <option>Como se enteró de nosotros</option>
+                  <option>Facebook</option>
+                  <option>Linkedin</option>
+                  <option>Youtube</option>
+                  <option>Blog</option>
+                  <option>Revistas / Periódico</option>
+                  <option>Otros</option>
+                  <option>Recomendación</option>
+                </select>
+              </div>
+              <div class="col-sm-12">
+                <textarea class="col-sm-12 col-xs-12 custom-textarea-1" name="" id="msj" placeholder="Mensaje"></textarea>
+                <div class="clearfix"></div>
+                <div class="invSep10"></div>
+                <div class="clearfix"></div>
+                <button class="btn custom-btn-4 pull-right"> Enviar <span class="glyphicon glyphicon-send" aria-hidden="true"> </span> </button>
+              </div>
+            </form>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="info-content">
+              <ul class="center-block">
+                <li><span>MEDICAL INNOVATION &amp; TECHNOLOGY S.A.C.</span></li>
+                <li><span style="padding-right:10px" class="glyphicon glyphicon-map-marker" aria-hidden="true"> </span> <a target="_blank" href="https://www.google.com.pe/maps/place/MEDICAL+innovation+%26+technology/@-12.0916886,-77.0273874,19z/data=!3m1!4b1!4m5!3m4!1s0x9105c8f4859a40cf:0x2d4c8ee8ebde6d5c!8m2!3d-12.0916886!4d-77.0268402">Av. Rivera Navarrete 451. O-502, San Isidro. Lima - Perú</a></li>
+                <li><span style="padding-right:10px" class="glyphicon glyphicon-earphone" aria-hidden="true"> </span> +51 1 421 3306</li>
+                <li><span style="padding-right:10px" class="glyphicon glyphicon-envelope" aria-hidden="true"> </span> info@medical-int.com</li>
+                <li><span style="padding-right:10px" class="glyphicon glyphicon-globe" aria-hidden="true"> </span> <a href="https://medical-int.com">www.medical-int.com</a></li>
+                <ul class="social-contact pull-right">
+                  <li class="social"><a href="https://www.facebook.com/medicalinnovationandtechnologyperu/?ref=ts&amp;fref=ts" target="_blank" class="home-nav" style="color: rgb(255, 255, 255);"><span class="icon-facebook"></span></a></li>
+                  <li class="social"><a href="https://www.linkedin.com/company/medical-innovation-&amp;-technology?trk=biz-companies-cym" target="_blank" class="home-nav" style="color: rgb(255, 255, 255);"><span class="icon-linkedin"></span></a></li>
+                  <li class="social"><a href="https://www.youtube.com/channel/UCnxh-ayzpj1UYGd8yPtYe4A" target="_blank" class="home-nav" style="color: rgb(255, 255, 255);"><span class="icon-youtube"></span></a></li>
                 </ul>
-                </footer>
-         </body>
-</html> 
+              </ul>
+              
+              <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="invSep80"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="formModal" style="z-index:999999999; top:80px;" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 id="modalTitle" class="modal-title"></h4>
+      </div>
+      <div class="modal-body" id="modalcontent"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div><footer>
+  <div class="container">
+	
+    <div class="text-center custom-footer-text">  
+		<div style="padding:0 0 5px 0">
+			Idioma: 
+			<a href="/change_lang.php?lang=en&amp;PHPSESSID=2ivh5v5gr3ft4mjps161onck34">English</a> • 
+			<a href="/change_lang.php?lang=es&amp;PHPSESSID=2ivh5v5gr3ft4mjps161onck34">Español</a>
+		</div>
+		Copyright 2018, <a href="/?PHPSESSID=2ivh5v5gr3ft4mjps161onck34">Medical Innovation &amp; technology</a> • Todos los derechos reservados    </div>
+	
+  </div>
+</footer><style>html::-webkit-scrollbar{display:none !important}body::-webkit-scrollbar{display:none !important}</style><script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.colorbox-min.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/sendmail.js"></script>
+
